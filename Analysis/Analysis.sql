@@ -8,16 +8,21 @@
 --     1.1.1	What is our total net revenue for the period of 2023-2024?
 
 with Return_inc as (
-select
-	round(sum(si.Quantity * p.price),0) as Revenue
-from sale_items si
-join products p
-on si.Product_ID = p.Product_ID
-join sales as s
-on si.Sale_ID = s.Sale_ID
-where s.SaleDate BETWEEN "2023-01-01" and "2023-12-31"
+SELECT 
+    ROUND(SUM(si.Quantity * p.price), 0) AS Revenue
+FROM
+    sale_items si
+        JOIN
+    products p ON si.Product_ID = p.Product_ID
+        JOIN
+    sales AS s ON si.Sale_ID = s.Sale_ID
+WHERE
+    s.SaleDate BETWEEN '2023-01-01' AND '2023-12-31'
 )
-select * from return_inc;
+SELECT 
+    *
+FROM
+    return_inc;
 
 
 
@@ -25,17 +30,22 @@ select * from return_inc;
 --     1.1.2   What is our total cost of goods sold (COGS) and our total gross profit for the same period?
 
 with cte1 as (
-select
-	round(sum(si.Quantity * p.cost),0) as COGS,
-	round(sum(si.Quantity * p.price),0) - round(sum(si.Quantity * p.cost),0) as Gross_Profit
-from sale_items si
-join products p
-on si.Product_ID = p.Product_ID
-join sales as s
-on si.Sale_ID = s.Sale_ID
-where s.SaleDate BETWEEN "2023-01-01" and "2023-12-31"
+SELECT 
+    ROUND(SUM(si.Quantity * p.cost), 0) AS COGS,
+    ROUND(SUM(si.Quantity * p.price), 0) - ROUND(SUM(si.Quantity * p.cost), 0) AS Gross_Profit
+FROM
+    sale_items si
+        JOIN
+    products p ON si.Product_ID = p.Product_ID
+        JOIN
+    sales AS s ON si.Sale_ID = s.Sale_ID
+WHERE
+    s.SaleDate BETWEEN '2023-01-01' AND '2023-12-31'
 )
-select * from cte1;
+SELECT 
+    *
+FROM
+    cte1;
 
 
 
@@ -43,15 +53,20 @@ select * from cte1;
 --     1.1.3     What is our overall gross profit margin (as a percentage)?
 
 with profit_percentage as (
-select
-	round(((round(sum(si.Quantity * p.price),0) - round(sum(si.Quantity * p.cost),0))/(round(sum(si.Quantity * p.cost),0)))*100,2) as 'profit margin %'
-from sale_items si
-join products p
-on si.Product_ID = p.Product_ID
-join sales as s
-on si.Sale_ID = s.Sale_ID
+SELECT 
+    ROUND(((ROUND(SUM(si.Quantity * p.price), 0) - ROUND(SUM(si.Quantity * p.cost), 0)) / (ROUND(SUM(si.Quantity * p.cost), 0))) * 100,
+            2) AS 'profit margin %'
+FROM
+    sale_items si
+        JOIN
+    products p ON si.Product_ID = p.Product_ID
+        JOIN
+    sales AS s ON si.Sale_ID = s.Sale_ID
 )
-select * from profit_percentage;
+SELECT 
+    *
+FROM
+    profit_percentage;
 
 
 
@@ -1115,7 +1130,7 @@ GROUP BY City
 ORDER BY Revenue DESC;
 
 
---                      3.2        Purchasing Behavior
+
 --                      3.2.1      What is the average number of distinct items a customer buys in a single sale?
 
 
