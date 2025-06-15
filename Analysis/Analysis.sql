@@ -1115,7 +1115,7 @@ GROUP BY City
 ORDER BY Revenue DESC;
 
 
-
+--                      3.2        Purchasing Behavior
 --                      3.2.1      What is the average number of distinct items a customer buys in a single sale?
 
 
