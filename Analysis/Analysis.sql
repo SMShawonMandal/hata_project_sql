@@ -75,7 +75,7 @@ FROM
 
 --            1.2  Growth & Trends:
 
---      1.2.1      How has our net revenue trended month-over-month and quarter-over-quarter throughout 2023 and 2024? Are there any clear seasonal patterns or significant fluctuations?
+--      1.2.1      How has our net revenue trended month-over-month and year_over_year throughout 2023 and 2024? Are there any clear seasonal patterns or significant fluctuations?
 
 
 
