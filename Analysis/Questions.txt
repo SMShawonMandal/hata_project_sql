@@ -1,57 +1,57 @@
-I. Overall Business Performance & Financial Health
+I.  Overall Business Performance & Financial Health
     1. Revenue & Profit:
         1.1.1	What is our total net revenue for the period of 2023-2024?
         1.1.2   What is our total cost of goods sold (COGS) and our total gross profit for the same period?
-        1.1.3     What is our overall gross profit margin (as a percentage)?
+        1.1.3   What is our overall gross profit margin (as a percentage)?
     1.2  Growth & Trends
-        1.2.1      How has our net revenue trended month-over-month and quarter-over-quarter throughout 2023 and 2024? Are there any clear seasonal patterns or significant fluctuations?
+        1.2.1   How has our net revenue trended month-over-month and year-over-year throughout 2023 and 2024? Are there any clear seasonal patterns or significant fluctuations?
         1.2.2	What is the average sales transaction value over the entire period?
 
 II. Product Performance
     2.	Best Sellers
         2.1.1  	Which are our top 10 products by quantity sold ?
         2.1.2  	Which are our top 10 products by net revenue generated?
-        2.1.3 Top Product Categories by Net Revenue
-        2.1.4 Bottom Product Categories by Net Revenue
-        2.1.5 Top Product Categories by Units Sold
-        2.1.6 Bottom Product Categories by Units Sold
+        2.1.3   Top Product Categories by Net Revenue
+        2.1.4   Bottom Product Categories by Net Revenue
+        2.1.5   Top Product Categories by Units Sold
+        2.1.6   Bottom Product Categories by Units Sold
         2.1.7	Can you identify the top 5 brands by revenue
-        2.1.8    Can you identify the top 5 brands by gross profit?
+        2.1.8   Can you identify the top 5 brands by gross profit?
     2.2	Profitability by Product
-        2.2.1              What is the average gross profit margin per product category?
-        2.2.2  Are there any specific products that have significantly higher gross profit margins than the average?
-        2.2.3  Are there any specific products that have significantly lower gross profit margins than the average?
-        2.2.4  Are there any specific Brand that have significantly Higher gross profit margins than the average?
-        2.2.5  Are there any specific Brand that have significantly lower gross profit margins than the average?
-    2.3    Size & Material Analysis
-        2.3.1       For our top-selling products, what are the most popular sizes? Does this vary by gender category?
-        2.3.2          Which materials (e.g., Leather, Synthetic, Canvas) are most popular ?
-        2.3.3 Which materials contribute how much to overall revenue and profit?
+        2.2.1   What is the average gross profit margin per product category?
+        2.2.2   Are there any specific products that have significantly higher gross profit margins than the average?
+        2.2.3   Are there any specific products that have significantly lower gross profit margins than the average?
+        2.2.4   Are there any specific Brand that have significantly Higher gross profit margins than the average?
+        2.2.5   Are there any specific Brand that have significantly lower gross profit margins than the average?
+    2.3 Size & Material Analysis
+        2.3.1   For our top-selling products, what are the most popular sizes? Does this vary by gender category?
+        2.3.2   Which materials (e.g., Leather, Synthetic, Canvas) are most popular ?
+        2.3.3   Which materials contribute how much to overall revenue and profit?
 
 III. Customer Insights
-    3.1        Demographics & Spending
-        3.1.1      What is the distribution of our customer base by gender and city?
-        3.1.2      How does average spending (average transaction value) differ between male and female customers?
-        3.1.3      Which cities are generating the most customer traffic and revenue?
-    3.2        Purchasing Behavior
-        3.2.1      What is the average number of distinct items a customer buys in a single sale?
+    3.1 Demographics & Spending
+        3.1.1    What is the distribution of our customer base by gender and city?
+        3.1.2    How does average spending (average transaction value) differ between male and female customers?
+        3.1.3    Which cities are generating the most customer traffic and revenue?
+    3.2 Purchasing Behavior
+        3.2.1    What is the average number of distinct items a customer buys in a single sale?
 
 IV. Store & Employee Performance
-    4.1        Store Performance
-        4.1.1      Which are our top 3 performing stores in terms of net revenue for the entire period?
-        4.1.2      Which are our bottom 3 performing stores in terms of net revenue for the entire period?
-        4.1.3      How does the average transaction value compare across our different stores?
-    4.2        Employee Contribution
-        4.2.1      Who are our top 5 sales associates by total sales amount?
-        4.2.2      How does the average sales amount per transaction differ between transactions handled by a 'Cashier' versus a 'Sales Associate'?
+    4.1 Store Performance
+        4.1.1    Which are our top 3 performing stores in terms of net revenue for the entire period?
+        4.1.2    Which are our bottom 3 performing stores in terms of net revenue for the entire period?
+        4.1.3    How does the average transaction value compare across our different stores?
+    4.2 Employee Contribution
+        4.2.1    Who are our top 5 sales associates by total sales amount?
+        4.2.2    How does the average sales amount per transaction differ between transactions handled by a 'Cashier' versus a 'Sales Associate'?
 
-V. Operational Efficiency & Returns
-    5.1        Returns Analysis
-        5.1.1      What is our overall return rate (total return amount as a percentage of total sales amount)?
-        5.1.2      What are the top 5 most common reasons for returns?
-        5.1.3      Are there specific products that have a disproportionately high return rate?
-        5.1.4      Are there specific categories that have a disproportionately high return rate?
-    5.2        Payment Methods
-        5.2.1      What are the most frequently used payment methods (Cash, Credit Card, etc.)?
-        5.2.2      what percentage of total payments does each payment methods account for?
-        5.2.3      What percentage of our sales involve multiple payment tenders?
+V.  Operational Efficiency & Returns
+    5.1 Returns Analysis
+        5.1.1     What is our overall return rate (total return amount as a percentage of total sales amount)?
+        5.1.2     What are the top 5 most common reasons for returns?
+        5.1.3     Are there specific products that have a disproportionately high return rate?
+        5.1.4     Are there specific categories that have a disproportionately high return rate?
+    5.2 Payment Methods
+        5.2.1     What are the most frequently used payment methods (Cash, Credit Card, etc.)?
+        5.2.2     what percentage of total payments does each payment methods account for?
+        5.2.3     What percentage of our sales involve multiple payment tenders?
