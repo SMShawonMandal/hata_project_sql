@@ -256,18 +256,15 @@ from returns r
 group by Product_ID)
 
 SELECT 
--- 	cte1.ProductName,
-	cte1.category,
--- 	cte1.revenue,
--- 	cte2.returned,
---  cte1.category,
-	sum(ROUND(cte1.revenue - COALESCE(cte2.returned, 0),0)) AS net_revenue
+    cte1.category,
+    SUM(ROUND(cte1.revenue - COALESCE(cte2.returned, 0),
+            0)) AS net_revenue
 FROM
     cte1
         LEFT JOIN
     cte2 ON cte1.product_ID = cte2.Product_ID
-group by category
-order by net_revenue desc;
+GROUP BY category
+ORDER BY net_revenue DESC;
 
 
 
@@ -293,15 +290,15 @@ FROM
     returns r
 GROUP BY Product_ID)
 
-SELECT
+SELECT 
     cte1.Category,
-	sum(cte1.total_sold - coalesce(cte2.returned,0)) as Units_sold
+    SUM(cte1.total_sold - COALESCE(cte2.returned, 0)) AS Units_sold
 FROM
     cte1
         LEFT JOIN
     cte2 ON cte1.product_ID = cte2.product_id
-Group by Category
-order by Units_sold desc ; 
+GROUP BY Category
+ORDER BY Units_sold DESC ; 
     
 
 
@@ -1445,26 +1442,23 @@ ORDER BY Count DESC;
 
 --                      5.2.2      what percentage of total payments does each payment methods account for?
 
+
 WITH Payment_methods as(
 SELECT 
     p.PaymentMethod,
     round(sum(p.PaymentAmount),0) as Amount
 FROM
     sales s
-    left join payments p 
+    right join payments p 
     on s.Payment_ID = p.Payment_ID
-WHERE
-    PaymentStatus = 'Completed'
 GROUP BY p.PaymentMethod
 ),
 
 Total as(
 SELECT 
-    round(sum(TotalAmount),0) as Total
+    round(sum(PaymentAmount),0) as Total
 FROM
-    sales
-WHERE
-    PaymentStatus = 'Completed'
+    Payments
 )
 
 SELECT 
@@ -1509,7 +1503,7 @@ where number_of_payment>1
 SELECT 
     ts.toal,
     m.multiple_payment,
-    round(coalesce(m.multiple_payment,0) / nullif(ts.toal,0) * 100 ,2) as Percentage
+    round(coalesce(m.multiple_payment,0) / (ts.toal) * 100 ,2) as Percentage
 FROM
     Total_sale ts
         CROSS JOIN
